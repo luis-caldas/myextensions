@@ -3,3 +3,6 @@
 
 # Bar needed files
 !.gitignore
+
+# Dont include any reference to other extensions
+/*/base
