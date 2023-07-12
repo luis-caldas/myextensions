@@ -1,0 +1,31 @@
+<!--
+   * Main frame for the extension, shown when the extension icon is clicked
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Agent Switcher Pieces</title>
+        <link rel="stylesheet" href="popup-style.css" media="screen"></link>
+        <script src="jquery.js"></script>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <label class="switch">
+                <input type="checkbox" id="on-or-not">
+                <div class="slider"></div>
+            </label>
+            <div id="disclaimer">Disclaimer:</div>
+            <div>>>> All substitutions are dynamic, so double-check your strings.</div>
+            <div id="user-agent-now"></div>
+            <div id="user-agent-pieces"></div>
+            <div id="setter">
+                <label class="text" for="regex-input"><b>Press enter to apply configuration</b></label>
+                <input type=text id="regex-input" autofocus>
+                <div id="user-agent-preview"></div>
+            </div>
+            <div id="alert-area"></div>
+        </div>
+    </body>
+</html>
