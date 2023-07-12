@@ -1,6 +1,14 @@
 # Hidden files
 .*
 
+# Compiled extensions
+*.crx
+
+# Keys and certs
+*.pem
+*.crt
+*.key
+
 # Bar needed files
 !.gitignore
 
