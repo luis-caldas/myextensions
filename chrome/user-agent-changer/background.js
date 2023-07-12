@@ -49,9 +49,9 @@ function updateIcon() {
     // get the original icons and change them
     let iconsOriginal = chrome.runtime.getManifest().icons;
 
-    // update the iconsmanifestData.icons
+    // update the icons
     if(localVariables["status"]) {
-        chrome.browserAction.setIcon({ path: iconsOriginal });
+        chrome.browserAction.setIcon(Object({ path: iconsOriginal }));
     } else {
         // create new object
         let newIcons = {};
