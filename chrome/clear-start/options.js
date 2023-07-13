@@ -4,7 +4,7 @@ const SHOW_TIMEOUT = 500;
 
 // Get the background storage
 var background = chrome.extension.getBackgroundPage();
-var storage  = background.storage;
+var storage  = chrome.storage.sync;
 
 // On page load
 $(document).ready(function() {
